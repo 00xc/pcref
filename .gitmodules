@@ -1,0 +1,3 @@
+[submodule "librseq"]
+	path = librseq
+	url = https://github.com/compudj/librseq.git
