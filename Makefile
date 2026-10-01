@@ -70,6 +70,8 @@ $(RSEQ_DIR)/src/%.o: $(RSEQ_DIR)/src/%.c | submodule-check
 
 -include $(OBJS_DEPS)
 
+tests: $(TESTS)
+
 tests/test_%.o: tests/test_%.c
 	$(info CC-TEST $@)
 	$(Q)$(CC) $(CFLAGS) -MMD -MP -c -o $@ $<
